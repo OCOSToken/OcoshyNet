@@ -1,0 +1,61 @@
+openapi: 3.0.0
+info:
+  title: OcoshyNet Protocol API (Read-only)
+  description: >
+    A non-interactive reference interface for logic observers and proof verifiers.
+    This OpenAPI spec documents how to observe emitted hashes, anchor timestamps,
+    and retrieve public logic commitments on OcoshyNet-compatible infrastructure.
+  version: 1.0.0
+
+paths:
+  /logic/{hash}:
+    get:
+      summary: Retrieve emitted logic metadata
+      parameters:
+        - name: hash
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Logic found
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  logicHash:
+                    type: string
+                  timestamp:
+                    type: integer
+                  source:
+                    type: string
+        '404':
+          description: Logic not found
+
+  /proof/{messageHash}:
+    get:
+      summary: Get timestamp anchor for a message hash
+      parameters:
+        - name: messageHash
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Timestamp data retrieved
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  btcBlockHeight:
+                    type: integer
+                  btcBlockHash:
+                    type: string
+                  timestamp:
+                    type: integer
+        '404':
+          description: Proof not found
