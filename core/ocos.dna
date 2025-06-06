@@ -1,0 +1,26 @@
+# OCOSHY PROTOCOL GENESIS LANGUAGE (ocos.dna)
+
+[logic-patterns]
+0x01 = trustless-initiation
+0x02 = logic-ping
+0x03 = silence-consent
+0x04 = timestamp-signed-thought
+0x05 = dual-consensus-bound
+
+[status-bytes]
+0x00 = null-state
+0x01 = transient
+0x02 = immutably-broadcast
+0xFF = terminated-chain
+
+[vocabulary]
+bit_void = Absence of any on-chain footprint
+genesis_echo = Logic confirmed by zero-response
+dual_trace = Logic independently verified by 2+ identities
+time_orbit = Message bound to BTC timestamp
+trust_vapor = All forms of institutional belief
+
+[protocol-intent]
+This file defines non-verbal logic primitives that all Ocoshy-compliant nodes interpret equally. It carries no semantic markup, no version control, and no governance. Only interpretation through silence, hash, and consensus.
+
+# End of DNA
