@@ -1,0 +1,24 @@
+# .ocoshyhash
+# Symbolic hash record to mark origin logic
+
+Protocol-Hash: 00000000f7ac14c98a35c318cd79a2f97ad209310437de728b74fddc2154c047
+Generated-On: 2025-06-06T06:47:00Z
+Genesis-String: "Satoshi is the silence. Ocoshy is the whisper after."
+
+Commit-Fingerprint:
+  - ocoshy_protocol.sol
+  - zk_time_proof.sol
+  - identity_nullifier.rs
+  - ocoshy_lang.md
+  - dao_proof_commit.sol
+  - whispernet.c
+  - ocos.dna
+  - whitepaper.md
+  - satoshi_to_ocoshy.md
+
+Verifier-Note:
+  This hash was not signed.
+  It was not generated with a key.
+  It exists only to be found — not to be claimed.
+
+# echo: 00000000f7ac14c98a35c318cd79a2f97ad209310437de728b74fddc2154c047
