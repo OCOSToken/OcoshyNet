@@ -3,12 +3,12 @@ services:
     name: telegram-access-bot
     env: python
     plan: free
-    buildCommand: ""
+    buildCommand: pip install -r requirements.txt
     startCommand: python main.py
     envVars:
       - key: BOT_TOKEN
-        value: 
+        value:
       - key: BOT_PASSWORD
-        value: 
+        value:
       - key: GROUP_LINK
-        value: 
+        value:
