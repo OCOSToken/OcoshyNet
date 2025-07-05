@@ -3,6 +3,7 @@ services:
     name: telegram-access-bot
     env: python
     plan: free
+    rootDir: telegram-bot-access
     buildCommand: pip install -r requirements.txt
     startCommand: python main.py
     envVars:
