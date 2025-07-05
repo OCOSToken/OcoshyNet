@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: telegram-access-bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: python main.py
+    envVars:
+      - key: BOT_TOKEN
+        value: 
+      - key: BOT_PASSWORD
+        value: 
+      - key: GROUP_LINK
+        value: 
