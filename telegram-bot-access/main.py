@@ -7,11 +7,11 @@ SECRET_PASSWORD = os.getenv("BOT_PASSWORD")
 GROUP_LINK = os.getenv("GROUP_LINK")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("🔐 Xoş gəlmisiniz! Zəhmət olmasa şifrəni daxil edin:")
+    await update.message.reply_text("🔐 Xoş gəlmisiniz! Şifrəni daxil edin:")
 
 async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.message.text.strip() == SECRET_PASSWORD:
-        await update.message.reply_text(f"✅ Doğrudur!\n🔗 {GROUP_LINK}")
+        await update.message.reply_text(f"✅ Şifrə doğrudur!\n🔗 {GROUP_LINK}")
     else:
         await update.message.reply_text("❌ Şifrə yalnışdır. Yenidən yoxlayın.")
 
